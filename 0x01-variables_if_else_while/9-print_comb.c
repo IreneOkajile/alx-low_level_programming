@@ -9,8 +9,8 @@ int main(void)
 	int n;
 
 
-	for (n = 48; num < 56; n++)
-	{
+	for (n = 48; n < 56; n++)
+
 		putchar(n);
 		if (n != 57)
 		{
