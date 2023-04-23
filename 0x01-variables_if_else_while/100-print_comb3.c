@@ -1,28 +1,32 @@
 #include <stdio.h>
 /**
- * main - prints all possible different combinations of two digits
+ * main - entry point
  *
- * Return: Always 0
+ * Return: alway returns 0
+ *
  */
 int main(void)
 {
-	int ones = 'o';
-	int tens = 'o';
+	int i;
+	int j;
 
-	for (tens = 'o'; tens <= '9'; tens++)
+	for (i = 10; i <= 19; i++)
 	{
-		for (ones = 'o'; ones <= '9'; tens++)
+		for (j = 10; j <= 19; j++)
 		{
-			if (!((ones == tens) || (tens > ones)))
+			if ((j % 10) > (i % 10))
 			{
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == '9' && tens == '8'))
+				putchar((i % 10) + '0');
+				putchar((j % 10) + '0');
+				if (i != 18 || j != 19)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
+
 		}
 	}
+	putchar('\n');
+	return (0);
 }
