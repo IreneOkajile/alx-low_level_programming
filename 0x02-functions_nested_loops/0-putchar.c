@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always returns 0
- *
+ * main - print _putchar followed by a new line
+ * is written by Pwave
+ * Return: 0
  */
 int main(void)
 {
@@ -17,5 +16,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
